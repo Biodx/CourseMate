@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: deepskyblue;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    font-weight: bold;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: dodgerblue;
+}
+
+.login {
+    float: right;
+
+}
+
+.login:hover {
+    transform: scaleX(1.07);
+}

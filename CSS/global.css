@@ -1,0 +1,43 @@
+.pillarbox {
+    position: fixed;
+    top: 113px;
+    bottom: 0;
+    width: 79px;
+    background-color: dodgerblue;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.content {
+    text-align: center;
+}
+
+h1 {
+    margin-left: 80px;
+    text-align: center;
+}
+
+/* @media Hides pillarboxes for Mobile Devices and smaller windows*/
+@media (max-width: 768px) {
+    .pillarbox {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .pillarbox {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .pillarbox {
+        display: none;
+    }
+}
