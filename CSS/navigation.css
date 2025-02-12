@@ -1,19 +1,23 @@
+/* Puts the Owl to the left of CourseMate logo*/
 .title-container {
     display: flex;
     align-items: center;
 }
 
+/*  Size of the Owl image  */
 .title-container img {
     width: 60px;
     margin-left: 5px;
 }
 
+/* This removes white edges around the window of the site (Should not really touch) */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*  Navigation bar styling  */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -22,10 +26,12 @@ nav ul {
     background-color: deepskyblue;
 }
 
+/*  Aligns the text/links of the navigation bar to the left  */
 nav li {
     float: left;
 }
 
+/*  Makes the navigation bar links fancy looking  */
 nav li a {
     font-weight: bold;
     display: block;
@@ -35,15 +41,18 @@ nav li a {
     text-decoration: none;
 }
 
+/*  Hover effect for navigation bar  */
 nav li a:hover {
     background-color: dodgerblue;
 }
 
+/*  Makes login link go to the right side */
 .login {
     float: right;
 
 }
 
+/*  Login link hover effect  */
 .login:hover {
     transform: scaleX(1.07);
 }

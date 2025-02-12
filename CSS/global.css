@@ -1,6 +1,7 @@
+/*  Pillarbox styling including left and right  */
 .pillarbox {
     position: fixed;
-    top: 113px;
+    top: 102px;
     bottom: 0;
     width: 79px;
     background-color: dodgerblue;
@@ -14,16 +15,18 @@
     right: 0;
 }
 
+/*  Preventing weird content placement */
 .content {
     text-align: center;
 }
 
+/*  Centering text for Pillarbox */
 h2 {
     margin-left: 80px;
     text-align: center;
 }
 
-/* @media Hides pillarboxes for Mobile Devices and smaller windows*/
+/*  @media Hides pillarboxes for Mobile Devices and smaller windows  */
 @media (max-width: 768px) {
     .pillarbox {
         display: none;
