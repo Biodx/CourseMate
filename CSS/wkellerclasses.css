@@ -1,0 +1,78 @@
+/* This is a file made by Wesley for the purpose of re-usable
+classes throughout the page such as buttons, circular images,
+blueborder boxes, etc. */
+
+/* These are some re-usable global variables for
+the color scheme: */
+:root{
+    --primary-color: #ffffff;
+    --secondary-color:#01b4b4;
+    --text-color: #222222;
+}
+
+/* Blue Header text */
+
+.blue-header-text {
+    font-family: 'Arial';
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+/* Blue border buttons */
+
+.blue-border-button {
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: var(--text-color);
+    border-color: var(--secondary-color);
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-family: 'Arial';
+    font-size: 16px;
+}
+
+/* Background color of the blue border button when 
+its hovered: */
+.blue-border-button:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+/* Solid blue buttons */
+
+.solid-blue-button {
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-family: 'Arial';
+    font-size: 16px;
+}
+
+/* Background color of the solid blue button when 
+its hovered: */
+.solid-blue-button:hover {
+    background-color: #00d6d6;
+}
+
+/* Blue border divider for content to go inside of */
+
+.blue-border-divider {
+    padding: 10px;
+    border-color: var(--secondary-color);
+    border-width: 2px;
+    border-style: solid;
+    color: var(--text-color);
+    font-family: 'Arial';
+    font-size: 16px;
+    max-width: 100%;
+    text-align: center;
+}

@@ -2,6 +2,7 @@
 .title-container {
     display: flex;
     align-items: center;
+    font-family: 'Arial';
 }
 
 /*  Size of the Owl image  */
@@ -39,6 +40,8 @@ nav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: 'Arial';
 }
 
 /*  Hover effect for navigation bar  */

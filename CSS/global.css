@@ -3,7 +3,7 @@
     position: fixed;
     top: 102px;
     bottom: 0;
-    width: 79px;
+    width: 10%;
     background-color: dodgerblue;
 }
 
@@ -15,16 +15,22 @@
     right: 0;
 }
 
+/* Note from Wesley 2-13-2025:
+*/
 /*  Preventing weird content placement */
 .content {
     text-align: center;
+    max-width: 80%;
+    margin-left: 10%;
 }
 
+/* Note from Wesley 2-13-2025: I removed the margin-left here as
+it was causing problems with the header text being centered */
 /*  Centering text for Pillarbox */
 h2 {
-    margin-left: 80px;
     text-align: center;
-}
+} 
+
 
 /*  @media Hides pillarboxes for Mobile Devices and smaller windows  */
 @media (max-width: 768px) {
