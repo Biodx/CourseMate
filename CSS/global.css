@@ -1,7 +1,7 @@
 /*  Pillarbox styling including left and right  */
 .pillarbox {
     position: fixed;
-    top: 102px;
+    top: 99px;
     bottom: 0;
     width: 10%;
     background-color: dodgerblue;
