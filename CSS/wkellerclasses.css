@@ -13,6 +13,7 @@ the color scheme: */
 /* Blue Header text */
 
 .blue-header-text {
+    font-weight: bold;
     font-family: 'Arial';
     color: var(--secondary-color);
     text-align: center;
