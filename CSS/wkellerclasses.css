@@ -76,3 +76,9 @@ its hovered: */
     max-width: 100%;
     text-align: center;
 }
+
+/* TODO: Circular image */
+
+.circle-img {
+    border-radius: 50%;
+}

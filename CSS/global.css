@@ -24,6 +24,14 @@
     margin-left: 10%;
 }
 
+/* Note from Wesley 2-20-2025: Added this in just so all paragraph text can
+have this same font family */
+p {
+    font-family: 'Arial';
+    font-size: 16px;
+}
+
+
 /* Note from Wesley 2-13-2025: I removed the margin-left here as
 it was causing problems with the header text being centered */
 /*  Centering text for Pillarbox */
