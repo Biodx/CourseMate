@@ -13,6 +13,7 @@ the color scheme: */
 /* Blue Header text */
 
 .blue-header-text {
+    font-weight: bold;
     font-family: 'Arial';
     color: var(--secondary-color);
     text-align: center;
@@ -75,4 +76,10 @@ its hovered: */
     font-size: 16px;
     max-width: 100%;
     text-align: center;
+}
+
+/* TODO: Circular image */
+
+.circle-img {
+    border-radius: 50%;
 }

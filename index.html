@@ -4,7 +4,7 @@
 
     <!--  Declaration  -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>CourseMate</title>
 
     <!--  Connecting CSS stylesheets to HTML  -->
@@ -33,23 +33,64 @@
     </ul>
 </nav>
 
-<div class="pillarbox left"></div>
 <div class="content">
     <!--  Main content goes here -->
-    <h2 class="blue-header-text">Smarter Choices Better Classes Real Student Advice</h2>
-    <button type="button" class="blue-border-button">FIND A COURSE</button>
-    <button type="button" class="blue-border-button">SIGN UP FOR FREE</button>
-    <div class="blue-border-divider">
-        <h2 class="blue-header-text">Your Ultimate College Cheat Code for Picking the Best Classes!</h2>
-        Say goodbye to boring lectures and surprise textbook fees! CourseMate connects you with real student
-        reviews, insider tips, and everything you need to crush you semester, Smarter Choices start here!
-    </div>
-    <button type="button" class="solid-blue-button">FEATURED COURSES</button>
-    <button type="button" class="solid-blue-button">COURSE MATERIAL</button>
-    <button type="button" class="solid-blue-button">TOP-RATED PROFESSORS</button>
-</div>
-<div class="pillarbox right"></div>
 
+    <!-- Top section -->
+    <div style="display: flex; flex-wrap: wrap; margin-bottom: 20px;">
+        <div style="display: flex; flex-direction: column; width: 60%; text-align: center;">
+            <h2 class="blue-header-text" style="font-size: 40px; margin-top: 20px; margin-bottom: 20px;" >Smarter Choices. <br> Better Classes. <br> Real Student Advice.</h2>
+            <p style="font-size: 18px; margin-top: 15px;">CourseMate helps you find the best courses, honest professor reviews, and
+                real insights from students just like you. Plan your semester with confidence.
+            </p>
+        </div>
+        <img src="IMG/HomePage/stackedbooks.jpg" alt="Image" class="circle-img" style="width: 200px; height: 200px; margin-top: 20px; margin-left: 20px;">
+        <img src="IMG/HomePage/stackedbooks.jpg" alt="Image" style="width: 200px; height: 200px; margin-top: 60px; margin-left: 20px;">
+    </div>
+
+    <!-- Buttons -->
+    <button type="button" class="blue-border-button" style="width: 250px; margin-left: 20px;">FIND A COURSE</button>
+    <button type="button" class="blue-border-button" style="width: 250px; margin-left: 20px;">SIGN UP FOR FREE</button>
+
+    <!-- Middle section -->
+    <div style="margin-top: 20px; display: flex;">
+        <div class="blue-border-divider" style="width: 80%; margin-left: 10%;">
+            <h2 class="blue-header-text" style="font-size: 40px; margin-bottom: 20px;">Your Ultimate College Cheat Code for Picking the Best Classes!</h2>
+            Say goodbye to boring lectures and surprise textbook fees! CourseMate connects you with real student
+            reviews, insider tips, and everything you need to crush you semester, Smarter Choices start here!
+        </div>
+    </div>
+
+    <!-- Bottom section -->
+    <div style="display: flex; flex-wrap: wrap; margin-top: 20px; justify-content: center; margin-bottom: 20px;">
+        <div style="display: flex; flex-direction: column; width: 200px; padding-right: 10px;">
+            <img src="IMG/HomePage/stackedbooks.jpg" alt="Image" class="circle-img" style="width: 100%; height: 200px;">
+            <button type="button" class="solid-blue-button" style="margin-top: 10px;">FEATURED COURSES</button>
+        </div>
+        <div style="display: flex; flex-direction: column; width: 200px; padding-right: 10px;">
+            <img src="IMG/HomePage/stackedbooks.jpg" alt="Image" class="circle-img" style="width: 100%; height: 200px;">
+            <button type="button" class="solid-blue-button" style="margin-top: 10px;">COURSE MATERIAL</button>
+        </div>
+        <div style="display: flex; flex-direction: column; width: 200px; padding-right: 10px;">
+            <img src="IMG/HomePage/stackedbooks.jpg" alt="Image" class="circle-img" style="width: 100%; height: 200px;">
+            <button type="button" class="solid-blue-button" style="margin-top: 10px;">TOP-RATED PROFESSORS</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- Pillarboxes -->
+<div class="pillarbox right"></div>
+<div class="pillarbox left"></div>
+
+<!-- Fixes pillarbox issues on most common browsers -->
+<script>
+    if (navigator.userAgent.indexOf("Chrome") > -1) {
+        document.querySelectorAll('.pillarbox').forEach(function(element) {
+            element.style.top = '98px';
+        });
+    }
+</script>
 
 
 </body>
