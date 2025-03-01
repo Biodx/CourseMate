@@ -4,7 +4,7 @@
 
     <!--  Declaration  -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>CourseMate</title>
 
     <!--  Connecting CSS stylesheets to HTML  -->
@@ -33,11 +33,24 @@
     </ul>
 </nav>
 
-<!--  Pillarboxes  -->
-<div class="pillarbox left"></div>
 <div class="content">
+    <!--  Main content goes here -->
+
 </div>
+
+<!-- Pillarboxes -->
 <div class="pillarbox right"></div>
+<div class="pillarbox left"></div>
+
+<!-- Fixes pillarbox issues on most common browsers -->
+<script>
+    if (navigator.userAgent.indexOf("Chrome") > -1) {
+        document.querySelectorAll('.pillarbox').forEach(function(element) {
+            element.style.top = '98px';
+        });
+    }
+</script>
 
 </body>
+
 </html>

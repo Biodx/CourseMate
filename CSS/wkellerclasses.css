@@ -83,3 +83,93 @@ its hovered: */
 .circle-img {
     border-radius: 50%;
 }
+<<<<<<< HEAD
+=======
+
+.discussion {
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.discussion input,
+.discussion textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.discussion input:focus,
+.discussion textarea:focus {
+    outline: none;
+    border-color: #1e90ff;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
+}
+
+.discussion button {
+    padding: 12px;
+    background-color: #1e90ff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.discussion button:hover {
+    background-color: #0078d4;
+}
+
+#discussion {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    max-width: 1500px;
+    display: inline-block;
+    width: auto;
+    word-wrap: break-word;
+}
+
+.message {
+    max-width: 1500px;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.message .username {
+    font-weight: bold;
+    color: #1e90ff;
+}
+
+.message .timestamp {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.message p {
+    margin-top: 10px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.message .timestamp {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+>>>>>>> a91db2e9b7cfd7ef17df477520344c659b12346b
