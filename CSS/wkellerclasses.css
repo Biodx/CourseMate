@@ -56,6 +56,8 @@ its hovered: */
     font-weight: bold;
     font-family: 'Arial';
     font-size: 16px;
+    text-decoration: none; /* <- added this so that the button can just be an <a> 
+    tag instead of a <button>, allowing for buttons to just link to other pages */
 }
 
 /* Background color of the solid blue button when 
@@ -83,8 +85,6 @@ its hovered: */
 .circle-img {
     border-radius: 50%;
 }
-<<<<<<< HEAD
-=======
 
 .discussion {
     margin-right: auto;
@@ -172,4 +172,3 @@ its hovered: */
     margin-top: 5px;
 }
 
->>>>>>> a91db2e9b7cfd7ef17df477520344c659b12346b
