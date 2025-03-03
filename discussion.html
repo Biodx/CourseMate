@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="CSS/global.css">
     <link rel="stylesheet" href="CSS/navigation.css">
     <link rel="stylesheet" href="CSS/wkellerclasses.css">
-    <script src="JS/discussion.js"></script>
 </head>
 
 <!--  CourseMate logo above navigation bar  -->
@@ -60,6 +59,11 @@
         });
     }
 </script>
+
+<!-- Moving this javascript here, because it selects certain elements by ID, we need to wait
+ until AFTER those elements are loaded to try to use this script, hence why it needs to be
+ at the bottom of the page -->
+<script src="JS/discussion.js"></script>
 
 </body>
 
