@@ -1,57 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!--  Declaration  -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>CourseMate</title>
-
-    <!--  Connecting CSS stylesheets to HTML  -->
+    <title>CourseMate - Reviews</title>
     <link rel="small icon" href="IMG/icon.png">
     <link rel="stylesheet" href="CSS/global.css">
     <link rel="stylesheet" href="CSS/navigation.css">
     <link rel="stylesheet" href="CSS/wkellerclasses.css">
-    <script src="JS/discussion.js"></script>
+   
+    <style>
+        .review {
+            border: 2px solid deepskyblue;
+            padding: 10px;
+            margin: 10px auto;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            max-width: 700px;
+        }
+    </style>
 </head>
-
-<!--  CourseMate logo above navigation bar  -->
 <body style="background-color: azure;">
-<div class="title-container">
-    <img src="IMG/icon.png" alt="Image">
-    <h1 style="color: deepskyblue; text-align: left; margin-left: 10px; margin-top: 5px;">CourseMate</h1>
-</div>
-
-<!--  Navigation bar  -->
-<nav>
-    <ul>
-        <li id="home"><a href="index.html">Home</a> </li>
-        <li><a href="aboutus.html">About Us</a> </li>
-        <li><a href="reviews.html">Reviews</a> </li>
-        <li><a href="discussion.html">Discussion</a> </li>
-        <li><a href="faq.html">FAQ</a> </li>
-        <li class="login"><a href="login.html">Login</a> </li>
-    </ul>
-</nav>
-
-<div class="content">
-    <!--  Main content goes here -->
-
-</div>
-
-<!-- Pillarboxes -->
-<div class="pillarbox right"></div>
-<div class="pillarbox left"></div>
-
-<!-- Fixes pillarbox issues on most common browsers -->
-<script>
-    if (navigator.userAgent.indexOf("Chrome") > -1) {
-        document.querySelectorAll('.pillarbox').forEach(function(element) {
-            element.style.top = '98px';
-        });
-    }
-</script>
-
+    <div class="title-container">
+        <img src="IMG/icon.png" alt="Image">
+        <h1 style="color: deepskyblue; text-align: left; margin-left: 10px; margin-top: 5px;">CourseMate</h1>
+    </div>
+    
+    <nav>
+        <ul>
+            <li id="home"><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="discussion.html">Discussion</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li class="login"><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    
+    <div class="content">
+        <h1 class="blue-header-text">Reviews</h1>
+        <p style="font-size: 18px; margin-top: 15px;">Share your experience and reviews on different courses.</p>
+        <form class="discussion" id="reviewForm">
+            <input type="text" id="username" placeholder="Your Name" required>
+            <textarea id="reviewMessage" placeholder="Write a review..." required></textarea>
+            <button type="submit">Post</button>
+        </form>
+        <div id="reviews"></div>
+    </div>
+    <script src="JS/discussion.js"></script>
+    <div class="pillarbox right"></div>
+    <div class="pillarbox left"></div>
+    
+    <script>
+        if (navigator.userAgent.indexOf("Chrome") > -1) {
+            document.querySelectorAll('.pillarbox').forEach(function(element) {
+                element.style.top = '98px';
+            });
+        }
+    </script>
+    
+    <script src="JS/reviews.js" defer></script>
+    
 </body>
-
 </html>
